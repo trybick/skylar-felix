@@ -1,0 +1,9 @@
+.pic-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pic-smiling {
+  width: 200px;
+}
