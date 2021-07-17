@@ -3,13 +3,24 @@ body {
 }
 
 .pic-wrapper {
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 4vh;
 }
 
 .pic-smiling {
   height: 85vh;
   border-radius: 10px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4vh;
+}
+
+.github-logo {
+  height: 22px;
 }
