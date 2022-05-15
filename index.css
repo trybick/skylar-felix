@@ -1,24 +1,21 @@
-body {
-  overflow: hidden;
-}
-
-.pic-wrapper {
+.image-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 4vh;
 }
 
-.pic-smiling {
-  height: 85vh;
+.image {
   border-radius: 10px;
+  width: 400px;
+  margin-top: 20px;
 }
 
 .footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 4vh;
+  margin-top: 40px;
 }
 
 .github-logo {
