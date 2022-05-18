@@ -5,4 +5,4 @@ import skylar04 from 'images/skylar04.jpg';
 
 const images = [skylar01, skylar02, skylar03, skylar04];
 
-export default images;
+export default images.slice(0).reverse();
