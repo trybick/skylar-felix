@@ -4,7 +4,7 @@ import { VscGithub } from 'react-icons/vsc';
 const Footer = () => (
   <Flex justify="center" m="10px 0 30px">
     <Link href="https://github.com/trybick/skylar-life" isExternal>
-      <Icon as={VscGithub} color="skyblue" boxSize="22px" />
+      <Icon as={VscGithub} boxSize="22px" color="skyblue" />
     </Link>
   </Flex>
 );
