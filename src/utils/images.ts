@@ -1,9 +1,8 @@
-const importAll = (context: any) =>
+const importAll = (context: __WebpackModuleApi.RequireContext) =>
   context
     .keys()
-    .filter((key: string) => !key.includes('./')) // remove duplicates
+    .filter((key) => !key.includes('./')) // remove duplicates
     .map(context)
-    .reverse();
+    .reverse() as string[];
 
-// @ts-ignore
 export const imageSources = importAll(require.context('../images', false, /\.(jpg)$/));
