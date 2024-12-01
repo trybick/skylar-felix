@@ -5,4 +5,9 @@ const importAll = (context: __WebpackModuleApi.RequireContext) =>
     .map(context)
     .reverse() as string[];
 
-export const imageSources = importAll(require.context('../images', false, /\.(jpg)$/));
+export const allImages = importAll(require.context('../images', true, /\.(jpg)$/));
+
+export const imageSources = allImages.filter((src) => {
+  const isSkylar = process.env.REACT_APP_SKYLAR === 'true';
+  return isSkylar ? src.includes('skylar') : src.includes('felix');
+});
