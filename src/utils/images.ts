@@ -5,7 +5,7 @@ const importAll = (context: __WebpackModuleApi.RequireContext) =>
     .map(context)
     .reverse() as string[];
 
-export const allImages = importAll(require.context('../images', true, /\.(jpg)$/));
+export const allImages = importAll(require.context('../images', true, /\.(webp)$/));
 
 export const imageSources = allImages.filter((src) => {
   const isSkylar = process.env.REACT_APP_SITE_NAME === 'skylar';
