@@ -8,6 +8,6 @@ const importAll = (context: __WebpackModuleApi.RequireContext) =>
 export const allImages = importAll(require.context('../images', true, /\.(jpg)$/));
 
 export const imageSources = allImages.filter((src) => {
-  const isSkylar = process.env.REACT_APP_SKYLAR === 'true';
+  const isSkylar = process.env.REACT_APP_SITE_NAME === 'skylar';
   return isSkylar ? src.includes('skylar') : src.includes('felix');
 });
