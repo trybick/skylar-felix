@@ -22,10 +22,10 @@
     "tsparticles-engine": "^2.0.6"
   },
   "devDependencies": {
-    "@types/node": "^17.0.33",
+    "@types/node": "^22.10.2",
     "@types/react": "^18.0.9",
     "@types/react-dom": "18.0.4",
-    "@types/webpack-env": "^1.18.0",
+    "@types/webpack-env": "^1.18.5",
     "@typescript-eslint/eslint-plugin": "^5.16.0",
     "@typescript-eslint/parser": "^5.16.0",
     "cross-env": "^7.0.3",
