@@ -1,20 +1,29 @@
-import { Flex, Image } from '@chakra-ui/react';
 import { imageSources } from 'utils/images';
 
 const ImagesContainer = () => (
-  <Flex align="center" direction="column" justify="center" mt="30px">
+  <div
+    style={{
+      display: 'flex',
+      alignItems: 'center',
+      flexDirection: 'column',
+      justifyContent: 'center',
+      marginTop: '30px',
+    }}
+  >
     {imageSources.map((src) => (
-      <Image
-        _hover={{ filter: 'drop-shadow(0 0 1.3rem deepskyblue)' }}
-        borderRadius="20px"
+      <img
         key={src}
-        maxW="85%"
-        mb="40px"
         src={src}
-        width="400px"
+        style={{
+          borderRadius: '20px',
+          maxWidth: '85%',
+          marginBottom: '40px',
+          width: '400px',
+          transition: 'filter 0.3s',
+        }}
       />
     ))}
-  </Flex>
+  </div>
 );
 
 export default ImagesContainer;
