@@ -1,4 +1,4 @@
-import { imageSources } from 'utils/images';
+import { imageSources } from '../utils/images';
 
 const ImagesContainer = () => (
   <div

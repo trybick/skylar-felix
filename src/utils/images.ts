@@ -1,13 +1,12 @@
-const importAll = (context: __WebpackModuleApi.RequireContext) =>
-  context
-    .keys()
-    .filter((key) => !key.includes('./')) // remove duplicates
-    .map(context)
-    .reverse() as string[];
+const allImages = Object.entries(import.meta.glob('../images/**/*.webp', { eager: true })).map(
+  ([path, module]) => ({
+    path,
+    src: (module as { default: string }).default,
+  })
+);
 
-export const allImages = importAll(require.context('../images', true, /\.(webp)$/));
-
-export const imageSources = allImages.filter((src) => {
-  const isSkylar = process.env.REACT_APP_SITE_NAME === 'skylar';
-  return isSkylar ? src.includes('skylar') : src.includes('felix');
-});
+export const imageSources = allImages
+  .filter(({ src }) =>
+    import.meta.env.VITE_SITE_NAME === 'skylar' ? src.includes('skylar') : src.includes('felix')
+  )
+  .map(({ src }) => src);
