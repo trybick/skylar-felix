@@ -1,6 +1,6 @@
 {
-  "name": "skylar-life",
-  "license": "ISC",
+  "name": "skylar-felix",
+  "license": "UNLICENSED",
   "scripts": {
     "start-skylar": "cross-env VITE_SITE_NAME='skylar' vite",
     "start-felix": "cross-env VITE_SITE_NAME='felix'  vite",
@@ -8,6 +8,10 @@
     "build-felix": "cross-env VITE_SITE_NAME='felix' vite build",
     "lint:check": "eslint . --ext .js,.jsx,.ts,.tsx --max-warnings=0",
     "lint:fix": "eslint --fix . --ext .js,.jsx,.ts,.tsx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trybick/skylar-felix"
   },
   "dependencies": {
     "react": "^18.1.0",

@@ -1,8 +1,8 @@
 ## For Skylar and Felix
 
-Skylar's site: [skylar.netlify.app](skylar.netlify.app)
+Skylar: [skylar.netlify.app](skylar.netlify.app)
 
-Felix's site: [felix-life.netlify.app](https://felix-life.netlify.app)
+Felix: [felix-life.netlify.app](https://felix-life.netlify.app)
 
 ## Local Development
 

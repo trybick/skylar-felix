@@ -3,7 +3,7 @@ const Footer = () => (
     style={{ display: 'flex', justifyContent: 'center', margin: '10px 0 20px' }}
   >
     <a
-      href="https://github.com/trybick/skylar-life"
+      href="https://github.com/trybick/skylar-felix"
       rel="noopener noreferrer"
       target="_blank"
     >
