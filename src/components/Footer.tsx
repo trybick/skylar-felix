@@ -1,6 +1,12 @@
 const Footer = () => (
-  <div style={{ display: 'flex', justifyContent: 'center', margin: '10px 0 20px' }}>
-    <a href="https://github.com/trybick/skylar-life" rel="noopener noreferrer" target="_blank">
+  <div
+    style={{ display: 'flex', justifyContent: 'center', margin: '10px 0 20px' }}
+  >
+    <a
+      href="https://github.com/trybick/skylar-life"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
       <svg
         fill="skyblue"
         height="22px"
