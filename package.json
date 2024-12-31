@@ -6,8 +6,6 @@
     "start-felix": "cross-env VITE_SITE_NAME='felix'  vite",
     "build-skylar": "cross-env VITE_SITE_NAME='skylar' vite build",
     "build-felix": "cross-env VITE_SITE_NAME='felix' vite build",
-    "eject": "react-scripts eject",
-    "clean": "rm -rf node_modules && yarn",
     "lint:check": "eslint . --ext .js,.jsx,.ts,.tsx --max-warnings=0",
     "lint:fix": "eslint --fix . --ext .js,.jsx,.ts,.tsx"
   },
@@ -35,17 +33,5 @@
     "prettier": "^3.4.2",
     "typescript": "^4.6.4",
     "vite": "^6.0.0"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   }
 }
