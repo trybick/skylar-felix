@@ -6,11 +6,11 @@ export default defineConfig({
   define: {
     'process.env.VITE_SITE_NAME': JSON.stringify(process.env.VITE_SITE_NAME),
   },
-  build: {
-    outDir: 'build',
-  },
   server: {
     open: true,
     port: 4000,
+  },
+  build: {
+    outDir: 'dist',
   },
 });

@@ -5,7 +5,7 @@
     "start-skylar": "cross-env VITE_SITE_NAME='skylar' vite",
     "start-felix": "cross-env VITE_SITE_NAME='felix'  vite",
     "build-skylar": "cross-env VITE_SITE_NAME='skylar' vite build",
-    "build-felix": "cross-env VITE_SITE_NAME='felix'  vite build",
+    "build-felix": "cross-env VITE_SITE_NAME='felix' vite build",
     "eject": "react-scripts eject",
     "clean": "rm -rf node_modules && yarn",
     "lint:check": "eslint . --ext .js,.jsx,.ts,.tsx --max-warnings=0",
