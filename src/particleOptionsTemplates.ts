@@ -1,9 +1,12 @@
 import { ISourceOptions } from '@tsparticles/engine';
 
-// Templates from:
-// https://github.com/tsparticles/tsparticles/tree/main/utils/configs/src
-
-export const particleOptions: Record<string, ISourceOptions> = {
+/** Templates from:
+ * https://github.com/tsparticles/tsparticles/tree/main/utils/configs/src
+ *
+ * There are four templates that seemed decent listed below.
+ * Only two are in use now though.
+ */
+export const particleOptionsTemplates: Record<string, ISourceOptions> = {
   // -------------- Pop --------------
   pop: {
     particles: {
