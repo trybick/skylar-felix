@@ -4,14 +4,12 @@ import { loadSlim } from '@tsparticles/slim';
 import { particleOptions } from '../particleOptions';
 
 const ParticlesContainer = () => {
-  const [init, setInit] = useState(false);
+  const [isReady, setIsReady] = useState(false);
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {
       await loadSlim(engine);
-    }).then(() => {
-      setInit(true);
-    });
+    }).then(() => setIsReady(true));
   }, []);
 
   const getRandomParticles = () => {
@@ -20,7 +18,7 @@ const ParticlesContainer = () => {
     return particleOptions[keys[randomIndex]];
   };
 
-  return init ? (
+  return isReady ? (
     <div style={{ position: 'absolute', zIndex: -1 }}>
       <Particles options={getRandomParticles()} />
     </div>
