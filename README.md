@@ -24,6 +24,10 @@ npm run start-felix
 Using https://github.com/343dev/optimizt
 
 ```
+npm i -g @343dev/optimizt
+```
+
+```
 # recursively create WebP versions for images in current directory
 optimizt --webp .
 
