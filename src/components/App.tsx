@@ -4,7 +4,6 @@ import { isUnlockedSession, setUnlockedSession } from '../utils/unlockSession';
 
 const ParticlesContainer = lazy(() => import('./ParticlesContainer'));
 const ImagesContainer = lazy(() => import('./ImagesContainer'));
-const Footer = lazy(() => import('./Footer'));
 
 const App = () => {
   const [isUnlocked, setIsUnlocked] = useState(() => isUnlockedSession());
@@ -30,7 +29,6 @@ const App = () => {
     <Suspense fallback={null}>
       <ParticlesContainer />
       <ImagesContainer />
-      <Footer />
     </Suspense>
   );
 };
