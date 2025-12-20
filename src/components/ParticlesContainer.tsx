@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Particles, { initParticlesEngine } from '@tsparticles/react';
 import { loadSlim } from '@tsparticles/slim';
 import { particleOptionsTemplates } from '../particleOptionsTemplates';
+import './ParticlesContainer.css';
 
 const ParticlesContainer = () => {
   const [isReady, setIsReady] = useState(false);
@@ -15,7 +16,7 @@ const ParticlesContainer = () => {
   const key = import.meta.env.VITE_SITE_NAME === 'skylar' ? 'nasa' : 'snow';
 
   return isReady ? (
-    <div style={{ position: 'absolute', zIndex: -1 }}>
+    <div className="particlesContainer">
       <Particles options={particleOptionsTemplates[key]} />
     </div>
   ) : null;

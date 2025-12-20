@@ -1,0 +1,15 @@
+.imagesContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.image {
+  border-radius: 20px;
+  max-width: 85%;
+  margin-bottom: 40px;
+  width: 400px;
+  transition: filter 0.3s;
+}
