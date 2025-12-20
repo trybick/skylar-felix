@@ -1,7 +1,7 @@
+import './Footer.css';
+
 const Footer = () => (
-  <div
-    style={{ display: 'flex', justifyContent: 'center', margin: '10px 0 20px' }}
-  >
+  <div className="footer">
     <a
       href="https://github.com/trybick/skylar-felix"
       rel="noopener noreferrer"
