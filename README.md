@@ -5,7 +5,7 @@
 
 Skylar: [skylar.netlify.app](skylar.netlify.app)
 
-Felix: [felix-life.netlify.app](https://felix-life.netlify.app)
+Felix: [felix-life.netlify.app](https://felixr.netlify.app)
 
 ## Local Development
 
