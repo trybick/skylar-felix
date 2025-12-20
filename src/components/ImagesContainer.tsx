@@ -3,8 +3,8 @@ import './ImagesContainer.css';
 
 const ImagesContainer = () => (
   <div className="imagesContainer">
-    {imageSources.map((src) => (
-      <img key={src} src={src} alt="" className="image" />
+    {imageSources.map((src, i) => (
+      <img key={`${src}-${i}`} src={src} alt="" className="image" />
     ))}
   </div>
 );

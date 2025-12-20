@@ -6,9 +6,9 @@ const allImages = Object.entries(
 }));
 
 export const imageSources = allImages
-  .filter(({ src }) =>
+  .filter(({ path }) =>
     import.meta.env.VITE_SITE_NAME === 'skylar'
-      ? src.includes('skylar')
-      : src.includes('felix')
+      ? path.includes('/skylar/')
+      : path.includes('/felix/')
   )
   .map(({ src }) => src);
